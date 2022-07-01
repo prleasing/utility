@@ -1,4 +1,4 @@
-import { nope } from './functuons';
+import { nope } from './functions';
 
 interface OptionAnimation {
 	duration: number;
