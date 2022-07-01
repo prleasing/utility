@@ -1,7 +1,7 @@
 {
 	"name": "@prleasing/utility",
 	"description": "Вспомогательные функции, которые пригодятся в работе",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"keywords": [
 		"typescript",
 		"service",
@@ -40,6 +40,7 @@
 		"jsdoc": "^3.6.10",
 		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
+		"prettier-plugin-jsdoc": "^0.3.38",
 		"vite": "^2.9.9",
 		"vite-plugin-dts": "^1.2.0"
 	},

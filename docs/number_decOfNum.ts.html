@@ -7,7 +7,7 @@
   tracking-code-which-will-go-to-the-HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@prleasing/utility object/omit.ts</title>
+  <title>@prleasing/utility number/decOfNum.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -93,7 +93,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>object/omit.ts</h1>
+                    <h1>number/decOfNum.ts</h1>
                 </header>
                 
 
@@ -102,29 +102,26 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { EmptyObject } from '../types/helpers';
-
-/**
- * Противоположность pick. Этот метод создает объект, создает объект исключая переданные ключи
+            <pre class="prettyprint source linenums"><code>/**
+ * Склонение числительных
  *
  * @example
- * 	const object = { a: '1', b: '2', c: '3' };
- * 	omit(object, 'a', 'c'); // => { 'b': '2' }
+ * 	decOfNum(14, ['год', 'года', 'лет']); // лет
  *
- * @param {Object} obj - Исходный объект.
- * @param {String[]} keys - Ключи объекта
  *
- * @returns {Object} - Новый объект
+ * @param {Number} number - исходное число
+ * @param {String[]} titles - массив числителей
+ *
+ * @returns {String} числитель
  */
-export function omit&lt;T extends EmptyObject, K extends keyof T>(obj: T, ...keys: K[]): Omit&lt;T, K> {
-	const newObj: EmptyObject = {};
+export function decOfNum(number: number, titles: string[]): string {
+	const decCache: number[] = [];
+	const decCases = [2, 0, 1, 1, 1, 2];
 
-	for (const key in obj) {
-		if (!keys.includes(key as any)) {
-			newObj[key] = obj[key];
-		}
+	if (!decCache[number]) {
+		decCache[number] = number % 100 > 4 &amp;&amp; number % 100 &lt; 20 ? 2 : decCases[Math.min(number % 10, 5)];
 	}
-	return newObj as Omit&lt;T, K>;
+	return titles[decCache[number]];
 }
 </code></pre>
         </article>

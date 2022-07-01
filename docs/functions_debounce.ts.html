@@ -7,7 +7,7 @@
   tracking-code-which-will-go-to-the-HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@prleasing/utility object/omit.ts</title>
+  <title>@prleasing/utility functions/debounce.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -93,7 +93,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>object/omit.ts</h1>
+                    <h1>functions/debounce.ts</h1>
                 </header>
                 
 
@@ -102,29 +102,33 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { EmptyObject } from '../types/helpers';
+            <pre class="prettyprint source linenums"><code>import { EmptyFunction } from '../types/helpers';
 
 /**
- * Противоположность pick. Этот метод создает объект, создает объект исключая переданные ключи
+ * Откладывает вызов функции на заданное количество миллисекунд
  *
  * @example
- * 	const object = { a: '1', b: '2', c: '3' };
- * 	omit(object, 'a', 'c'); // => { 'b': '2' }
+ * 	function search() {
+ * 		// ...
+ * 	}
+ * 	document.querySelector('input')?.addEventListener('input', debounce(search, 1000));
  *
- * @param {Object} obj - Исходный объект.
- * @param {String[]} keys - Ключи объекта
+ * @param {Function} cb - Исходная функция
+ * @param {Number} ms - Время задержки в миллисекундах
  *
- * @returns {Object} - Новый объект
+ * @returns {Function}
  */
-export function omit&lt;T extends EmptyObject, K extends keyof T>(obj: T, ...keys: K[]): Omit&lt;T, K> {
-	const newObj: EmptyObject = {};
+export function debounce&lt;T extends EmptyFunction>(cb: T, ms: number) {
+	// eslint-disable-next-line no-undef
+	// @ts-ignore
+	// eslint-disable-next-line no-undef
+	let h: NodeJS.Timeout = 0;
+	const callable = (...args: any) => {
+		clearTimeout(h);
+		h = setTimeout(() => cb(...args), ms);
+	};
 
-	for (const key in obj) {
-		if (!keys.includes(key as any)) {
-			newObj[key] = obj[key];
-		}
-	}
-	return newObj as Omit&lt;T, K>;
+	return &lt;T>(&lt;any>callable);
 }
 </code></pre>
         </article>

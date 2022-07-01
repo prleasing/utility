@@ -7,7 +7,7 @@
   tracking-code-which-will-go-to-the-HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@prleasing/utility object/omit.ts</title>
+  <title>@prleasing/utility functions/delay.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -93,7 +93,7 @@
             <div class="content">
                 <header class="page-title">
                     <p>Source</p>
-                    <h1>object/omit.ts</h1>
+                    <h1>functions/delay.ts</h1>
                 </header>
                 
 
@@ -102,29 +102,19 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { EmptyObject } from '../types/helpers';
-
-/**
- * Противоположность pick. Этот метод создает объект, создает объект исключая переданные ключи
+            <pre class="prettyprint source linenums"><code>/**
+ * Задержка выполнения
  *
- * @example
- * 	const object = { a: '1', b: '2', c: '3' };
- * 	omit(object, 'a', 'c'); // => { 'b': '2' }
+ * @param {Number} ms - Время остановки в миллисекундах
  *
- * @param {Object} obj - Исходный объект.
- * @param {String[]} keys - Ключи объекта
- *
- * @returns {Object} - Новый объект
+ * @returns {Promise}
  */
-export function omit&lt;T extends EmptyObject, K extends keyof T>(obj: T, ...keys: K[]): Omit&lt;T, K> {
-	const newObj: EmptyObject = {};
-
-	for (const key in obj) {
-		if (!keys.includes(key as any)) {
-			newObj[key] = obj[key];
-		}
-	}
-	return newObj as Omit&lt;T, K>;
+export function delay(ms: number): Promise&lt;void> {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve();
+		}, ms);
+	});
 }
 </code></pre>
         </article>

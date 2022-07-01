@@ -54,12 +54,8 @@ export function createBEM(name: string) {
 	return b;
 }
 /**
- * bem helper
- * b() // 'button'
- * b('text') // 'button__text'
- * b({ disabled }) // 'button button--disabled'
- * b('text', { disabled }) // 'button__text button__text--disabled'
- * b(['disabled', 'primary']) // 'button button--disabled button--primary'
+ * Bem helper b() // 'button' b('text') // 'button__text' b({ disabled }) // 'button button--disabled' b('text', {
+ * disabled }) // 'button__text button__text--disabled' b(['disabled', 'primary']) // 'button button--disabled button--primary'
  */
 
 export type BEM = ReturnType<typeof createBEM>;

@@ -83,7 +83,7 @@
             
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#omit">omit</a></li><li><a href="global.html#pick">pick</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="Random.html">Random</a></li></ul><h3>Global</h3><ul><li><a href="global.html#clamp">clamp</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#decOfNum">decOfNum</a></li><li><a href="global.html#delay">delay</a></li><li><a href="global.html#generateId">generateId</a></li><li><a href="global.html#nope">nope</a></li><li><a href="global.html#omit">omit</a></li><li><a href="global.html#parsingPhone">parsingPhone</a></li><li><a href="global.html#pick">pick</a></li></ul></div>
                 
             </nav>
         </div>
@@ -167,11 +167,1077 @@
     
 
     
+        <div class='vertical-section'>
+            <h1>Members</h1>
+            <div class="members">
+            
+                <div class="member">
+
+<h4 class="name" id="nope">
+    <a class="href-link" href="#nope">#</a>
+    
+        
+            <span class='tag'>constant</span>
+        
+    
+    <span class="code-name">
+        nope
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>Функция заглушка</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="functions_util.ts.html" class="button">View Source</a>
+            <span>
+                <a href="functions_util.ts.html">functions/util.ts</a>, <a href="functions_util.ts.html#line5">line 5</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
 
     
         <div class='vertical-section'>
             <h1>Methods</h1>
             <div class="members">
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="clamp">
+        <a class="href-link" href="#clamp">#</a>
+        
+        <span class="code-name">
+            
+                clamp<span class="signature">(min, number, max)</span><span class="type-signature"> &rarr; {Number}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Задаёт значение в диапазоне между указанными нижней и верхней границами</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>min</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>минимальное значение</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>number</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>значение</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>max</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>максимальное значение</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="number_clamp.ts.html" class="button">View Source</a>
+            <span>
+                <a href="number_clamp.ts.html">number/clamp.ts</a>, <a href="number_clamp.ts.html#line15">line 15</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">Number</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>clamp(1, 15, 20); // 15
+	clamp(1, 44, 20); // 20</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="debounce">
+        <a class="href-link" href="#debounce">#</a>
+        
+        <span class="code-name">
+            
+                debounce<span class="signature">(cb, ms)</span><span class="type-signature"> &rarr; {function}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Откладывает вызов функции на заданное количество миллисекунд</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>cb</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">function</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Исходная функция</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>ms</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Время задержки в миллисекундах</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="functions_debounce.ts.html" class="button">View Source</a>
+            <span>
+                <a href="functions_debounce.ts.html">functions/debounce.ts</a>, <a href="functions_debounce.ts.html#line16">line 16</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">function</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>function search() {
+		// ...
+	}
+	document.querySelector('input')?.addEventListener('input', debounce(search, 1000));</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="decOfNum">
+        <a class="href-link" href="#decOfNum">#</a>
+        
+        <span class="code-name">
+            
+                decOfNum<span class="signature">(number, titles)</span><span class="type-signature"> &rarr; {String}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Склонение числительных</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>number</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>исходное число</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>titles</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Array.&lt;String></code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>массив числителей</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="number_decOfNum.ts.html" class="button">View Source</a>
+            <span>
+                <a href="number_decOfNum.ts.html">number/decOfNum.ts</a>, <a href="number_decOfNum.ts.html#line14">line 14</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><p>числитель</p></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">String</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>decOfNum(14, ['год', 'года', 'лет']); // лет</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="delay">
+        <a class="href-link" href="#delay">#</a>
+        
+        <span class="code-name">
+            
+                delay<span class="signature">(ms)</span><span class="type-signature"> &rarr; {Promise}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Задержка выполнения</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>ms</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">Number</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>Время остановки в миллисекундах</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="functions_delay.ts.html" class="button">View Source</a>
+            <span>
+                <a href="functions_delay.ts.html">functions/delay.ts</a>, <a href="functions_delay.ts.html#line9">line 9</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">Promise</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="generateId">
+        <a class="href-link" href="#generateId">#</a>
+        
+        <span class="code-name">
+            
+                generateId<span class="signature">(prefix)</span><span class="type-signature"> &rarr; {String}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Генерация случайного id</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>prefix</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">String</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>префикс id</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="string_generate-id.ts.html" class="button">View Source</a>
+            <span>
+                <a href="string_generate-id.ts.html">string/generate-id.ts</a>, <a href="string_generate-id.ts.html#line7">line 7</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    <div class='param-desc column is-7'><ul>
+<li>id</li>
+</ul></div>
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">String</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
+
+
+</div>
             
                 <div class="member">
 
@@ -270,7 +1336,7 @@
 
   
 
-  <td class="description last"><p>ключи объекта</p></td>
+  <td class="description last"><p>Ключи объекта</p></td>
 </tr>
 
 
@@ -316,9 +1382,9 @@
 
     
         <p class="tag-source">
-            <a href="omit.ts.html" class="button">View Source</a>
+            <a href="object_omit.ts.html" class="button">View Source</a>
             <span>
-                <a href="omit.ts.html">omit.ts</a>, <a href="omit.ts.html#line11">line 11</a>
+                <a href="object_omit.ts.html">object/omit.ts</a>, <a href="object_omit.ts.html#line14">line 14</a>
             </span>
         </p>
     
@@ -350,7 +1416,7 @@
 <div class="columns">
     
     <div class='param-desc column is-7'><ul>
-<li>новый объект</li>
+<li>Новый объект</li>
 </ul></div>
     
     
@@ -374,9 +1440,232 @@
     <h5>Example</h5>
     
     
-        <pre class="prettyprint"><code>const object = { 'a': '1', 'b': '2', 'c': '3' };
-omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
+        <pre class="prettyprint"><code>const object = { a: '1', b: '2', c: '3' };
+	omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
     
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id="parsingPhone">
+        <a class="href-link" href="#parsingPhone">#</a>
+        
+        <span class="code-name">
+            
+                parsingPhone<span class="signature">(str)</span><span class="type-signature"> &rarr; {Object}</span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Форматирует номер телефона</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>str</code></td>
+  
+
+  <td class="type">
+  
+      
+<code class="param-type">String</code>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>номер телефона в международном формат</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+<div class="table-container">
+    <table class="props table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+            
+<tr class="deep-level-0">
+    
+        <td class="name"><code>formatting</code></td>
+    
+
+    <td class="type">
+    
+        
+<code class="param-type">String</code>
+
+
+    
+    </td>
+
+    
+
+    
+
+    <td class="description last"><p>отформатированная строка</p></td>
+</tr>
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="functions_index.ts.html" class="button">View Source</a>
+            <span>
+                <a href="functions_index.ts.html">functions/index.ts</a>, <a href="functions_index.ts.html#line22">line 22</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class='columns method-parameter'>
+        <div class="column is-2"><label>Returns:</label></div>
+        <div class="column is-10">
+            
+                    
+
+<div class="columns">
+    
+    
+    <div class='column is-5 has-text-left'>
+        <label>Type: </label>
+        
+<code class="param-type">Object</code>
+
+
+    </div>
+    
+</div>
+
+                
+        </div>
+    </div>
+
+
 
 
 </div>
@@ -478,7 +1767,7 @@ omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
 
   
 
-  <td class="description last"><p>ключи объекта</p></td>
+  <td class="description last"><p>Ключи объекта</p></td>
 </tr>
 
 
@@ -524,9 +1813,9 @@ omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
 
     
         <p class="tag-source">
-            <a href="pick.ts.html" class="button">View Source</a>
+            <a href="object_pick.ts.html" class="button">View Source</a>
             <span>
-                <a href="pick.ts.html">pick.ts</a>, <a href="pick.ts.html#line11">line 11</a>
+                <a href="object_pick.ts.html">object/pick.ts</a>, <a href="object_pick.ts.html#line14">line 14</a>
             </span>
         </p>
     
@@ -558,7 +1847,7 @@ omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
 <div class="columns">
     
     <div class='param-desc column is-7'><ul>
-<li>новый объект</li>
+<li>Новый объект</li>
 </ul></div>
     
     
@@ -582,8 +1871,8 @@ omit(object, 'a', 'c'); // => { 'b': '2' }</code></pre>
     <h5>Example</h5>
     
     
-        <pre class="prettyprint"><code>const object = { 'a': '1', 'b': '2', 'c': '3' };
-pick(object, 'a', 'c'); // => { 'a': '1', 'c': '3' }</code></pre>
+        <pre class="prettyprint"><code>const object = { a: '1', b: '2', c: '3' };
+	pick(object, 'a', 'c'); // => { 'a': '1', 'c': '3' }</code></pre>
     
 
 
