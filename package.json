@@ -14,6 +14,10 @@
 		"dist",
 		"docs"
 	],
+	"repository": {
+		"url": "https://github.com/prleasing/utility"
+	},
+	"homepage": "https://prleasing.github.io/utility",
 	"license": "Apache-2.0",
 	"maintainers": [
 		"Yakin Nikita <taknepoidet@yandex.ru>"
@@ -44,5 +48,9 @@
 	},
 	"lint-staged": {
 		"{src,test}/**/*.ts": "eslint"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
 	}
 }
