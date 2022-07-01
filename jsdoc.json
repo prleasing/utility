@@ -1,0 +1,36 @@
+{
+	"sourceType": "module",
+	"opts": {
+		"encoding": "utf8",
+		"destination": "docs/",
+		"recurse": true,
+		"template": "node_modules/better-docs",
+		"readme": "README.md"
+	},
+	"tags": {
+		"dictionaries": ["jsdoc", "closure"],
+		"allowUnknownTags": ["subcategory", "category", "optional"]
+	},
+	"plugins": ["node_modules/better-docs/typescript", "plugins/markdown", "node_modules/better-docs/category"],
+	"source": {
+		"include": ["./src"],
+		"includePattern": "\\.(ts)$"
+	},
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false,
+		"search": true,
+		"better-docs": {
+			"name": "@prleasing/utility",
+			"title": "@prleasing/utility",
+			"trackingCode": "tracking-code-which-will-go-to-the-HEAD",
+			"hideGenerator": false,
+			"navLinks": [
+				{
+					"label": "Github",
+					"href": "https://github.com/prleasing/utility"
+				}
+			]
+		}
+	}
+}

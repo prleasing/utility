@@ -1,0 +1,48 @@
+{
+	"name": "@prleasing/utility",
+	"description": "Вспомогательные функции, которые пригодятся в работе",
+	"version": "1.0.0",
+	"keywords": [
+		"typescript",
+		"service",
+		"utility"
+	],
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.es.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"docs"
+	],
+	"license": "Apache-2.0",
+	"maintainers": [
+		"Yakin Nikita <taknepoidet@yandex.ru>"
+	],
+	"scripts": {
+		"preinstall": "git config core.hooksPath ./.hooks",
+		"dev": "vite build --watch",
+		"build": "tsc && vite build",
+		"docs": "jsdoc -c jsdoc.json",
+		"eslint": "eslint --fix .",
+		"prettier": "prettier --ignore-unknown --write .",
+		"beautifier": "npm run eslint && npm run prettier",
+		"prepublish": "npm run docs && npm run build"
+	},
+	"devDependencies": {
+		"@taknepoidet-config/eslint-config": "^1.9.2",
+		"@taknepoidet-config/prettier": "^1.9.1",
+		"better-docs": "^2.7.2",
+		"eslint": "^8.18.0",
+		"jsdoc": "^3.6.10",
+		"lint-staged": "^13.0.3",
+		"prettier": "^2.7.1",
+		"vite": "^2.9.9",
+		"vite-plugin-dts": "^1.2.0"
+	},
+	"dependencies": {
+		"vue": "^3.2.37"
+	},
+	"lint-staged": {
+		"{src,test}/**/*.ts": "eslint"
+	}
+}
