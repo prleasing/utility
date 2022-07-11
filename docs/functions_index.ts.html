@@ -102,12 +102,10 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import { EmptyFunction } from '../types/helpers';
-
-export * from './random';
+            <pre class="prettyprint source linenums"><code>export * from './random';
 export * from './delay';
 export * from './debounce';
-export * from './util'
+export * from './util';
 
 export function isValidUrl(string: string) {
 	let url;
@@ -122,9 +120,10 @@ export function isValidUrl(string: string) {
 
 /**
  * Форматирует номер телефона
+ *
  * @param {String} str - номер телефона в международном формат
+ *
  * @returns {Object}
- * @property {String} formatting - отформатированная строка
  */
 export function parsingPhone(str: string): null | {
 	formatting: string;
@@ -146,17 +145,12 @@ export function parsingPhone(str: string): null | {
 	return null;
 }
 
-
 export function phoneFormat(phone: string, output: 'string' | 'number' = 'number') {
 	if (output === 'string') {
 		return phone;
 	}
 	return phone.replace(/\D+/g, '');
 }
-
-
-
-
 </code></pre>
         </article>
     </section>
