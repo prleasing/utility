@@ -1,4 +1,3 @@
-export type { FunctionParameters, VuePropsType } from './types/util';
 export * from './types';
 export * from './string';
 export * from './functions';

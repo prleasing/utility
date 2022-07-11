@@ -1,7 +1,7 @@
 {
   "name": "@prleasing/utility",
   "description": "Вспомогательные функции, которые пригодятся в работе",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "keywords": [
     "typescript",
     "service",
@@ -23,7 +23,7 @@
     "Yakin Nikita <taknepoidet@yandex.ru>"
   ],
   "scripts": {
-    "preinstall": "git config core.hooksPath ./.hooks",
+		"init": "git config core.hooksPath ./.hooks",
     "dev": "vite build --watch",
     "build": "tsc && vite build",
     "docs": "jsdoc -c jsdoc.json",
