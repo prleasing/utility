@@ -4,3 +4,4 @@ yarn.lock
 dist
 .idea
 .DS_Store
+docs
