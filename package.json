@@ -1,7 +1,7 @@
 {
   "name": "@prleasing/utility",
   "description": "Вспомогательные функции, которые пригодятся в работе",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "keywords": [
     "typescript",
     "service",
