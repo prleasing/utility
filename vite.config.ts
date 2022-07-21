@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
 import { defineConfig } from 'vite';
 // @ts-ignore
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
 	plugins: [dts(), vue()],
@@ -14,7 +14,7 @@ export default defineConfig({
 			fileName: (format) => `index.${format}.js`
 		},
 		rollupOptions: {
-			preserveModules: true,
+			preserveModules: true
 		},
 		minify: 'terser'
 	}

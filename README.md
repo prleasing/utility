@@ -15,7 +15,7 @@ yarn add @prleasing/utility
 ## Использование
 
 ```typescript
-import { omit } from '@prleasing/utility';
+import { omit } from '';
 
 const object = { a: '1', b: '2', c: '3' };
 omit(object, 'a', 'c'); // => { 'b': '2' }
