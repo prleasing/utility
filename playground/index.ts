@@ -1,3 +1,3 @@
-import { test } from "../src";
+import { Random } from '../src';
 
-console.log(test());
+console.log(Random.int(1, 100));

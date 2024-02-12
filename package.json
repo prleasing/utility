@@ -1,8 +1,8 @@
 {
-  "name": "packageName",
-  "version": "0.0.0",
+  "name": "@prleasing/utility",
+  "version": "2.0.0",
   "description": "",
-  "repository": "prleasing/packageName",
+  "repository": "prleasing/utility",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
@@ -33,6 +33,7 @@
     "@poidet/editorconfig": "^0.6.0",
     "@poidet/eslint-config": "^0.6.3",
     "@poidet/prettier": "^0.6.0",
+    "@types/luxon": "^3.4.2",
     "@types/node": "^20.11.17",
     "@vitest/coverage-v8": "^1.2.2",
     "changelogen": "^0.5.5",
@@ -44,5 +45,12 @@
     "unbuild": "^2.0.0",
     "vitest": "^1.2.2"
   },
-  "packageManager": "pnpm@8.12.1"
+  "packageManager": "pnpm@8.12.1",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "luxon": "^3.4.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.18"
+  }
 }

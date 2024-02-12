@@ -1,4 +1,4 @@
-# packageName
+# @prleasing/utility
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -14,26 +14,26 @@ Install package:
 
 ```sh
 # npm
-npm install packageName
+npm install @prleasing/utility
 
 # yarn
-yarn add packageName
+yarn add @prleasing/utility
 
 # pnpm
-pnpm install packageName
+pnpm install @prleasing/utility
 
 # bun
-bun install packageName
+bun install @prleasing/utility
 ```
 
 Import:
 
 ```js
 // ESM
-import {} from "packageName";
+import {} from "@prleasing/utility";
 
 // CommonJS
-const {} = require("packageName");
+const {} = require("@prleasing/utility");
 ```
 
 ## Development
@@ -52,13 +52,13 @@ Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/packageName?style=flat&colorA=18181B&colorB=F0DB4F
-[npm-version-href]: https://npmjs.com/package/packageName
-[npm-downloads-src]: https://img.shields.io/npm/dm/packageName?style=flat&colorA=18181B&colorB=F0DB4F
-[npm-downloads-href]: https://npmjs.com/package/packageName
+[npm-version-src]: https://img.shields.io/npm/v/@prleasing/utility?style=flat&colorA=18181B&colorB=F0DB4F
+[npm-version-href]: https://npmjs.com/package/@prleasing/utility
+[npm-downloads-src]: https://img.shields.io/npm/dm/@prleasing/utility?style=flat&colorA=18181B&colorB=F0DB4F
+[npm-downloads-href]: https://npmjs.com/package/@prleasing/utility
 
-<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/unjs/packageName/main?style=flat&colorA=18181B&colorB=F0DB4F
-[codecov-href]: https://codecov.io/gh/unjs/packageName
+<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/unjs/@prleasing/utility/main?style=flat&colorA=18181B&colorB=F0DB4F
+[codecov-href]: https://codecov.io/gh/unjs/@prleasing/utility
 
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/packageName?style=flat&colorA=18181B&colorB=F0DB4F
-[bundle-href]: https://bundlephobia.com/result?p=packageName -->
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/@prleasing/utility?style=flat&colorA=18181B&colorB=F0DB4F
+[bundle-href]: https://bundlephobia.com/result?p=@prleasing/utility -->
